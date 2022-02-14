@@ -1,0 +1,31 @@
+
+{% extends 'store/main.html'%}
+{% load static %}
+{% block content%}
+
+<div class="row">
+    {% for product in products %}
+    <div class="col-lg-3 mt-4">
+        <img class="thumbnail" src="{{ product.imageURL }}">
+        <div class="box-element product">
+            <h6 class="text-start"><strong>{{product}}</strong></h6>
+            <hr>
+
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary  rounded mx-auto update-cart">Cart+</button>
+            <a class="btn btn-outline-success rounded " href="#">View</a>
+            <h4 style="display: inline-block; float: right"><strong>₦{{product.price|floatformat:2}}</strong></h4>
+
+        </div>
+    </div> 
+
+    {% endfor %}
+
+    
+</div>
+{% endblock content%}
+
+
+
+
+
+
