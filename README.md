@@ -1,9 +1,9 @@
 # Pentyfas-Ecommerce- Store
 
 
-Django E-commerce
+#Django E-commerce
 
-This is a very simple e-commerce website built with Django.
+#This is a very simple e-commerce website built with Django.
 Quick demo
 
 alt text
